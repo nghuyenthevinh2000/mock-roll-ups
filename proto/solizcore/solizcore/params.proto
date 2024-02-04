@@ -1,0 +1,15 @@
+syntax = "proto3";
+package solizcore.solizcore;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+
+option go_package = "soliz-core/x/solizcore/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (amino.name) = "solizcore/x/solizcore/Params";
+  option (gogoproto.equal) = true;
+
+  
+}
