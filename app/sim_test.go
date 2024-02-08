@@ -35,7 +35,7 @@ import (
 )
 
 const (
-	SimAppChainID = "soliz-core-simapp"
+	SimAppChainID = "soliz-simapp"
 )
 
 var FlagEnableStreamingValue bool

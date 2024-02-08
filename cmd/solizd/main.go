@@ -7,7 +7,7 @@ import (
 	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
 
 	"soliz-core/app"
-	"soliz-core/cmd/soliz-cored/cmd"
+	"soliz-core/cmd/solizd/cmd"
 )
 
 func main() {

@@ -1,0 +1,1 @@
+echo $(celestia bridge auth admin --node.store mytestnet/bridge)

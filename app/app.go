@@ -53,15 +53,14 @@ import (
 	ibctransferkeeper "github.com/cosmos/ibc-go/v8/modules/apps/transfer/keeper"
 	ibckeeper "github.com/cosmos/ibc-go/v8/modules/core/keeper"
 
-	solizcoremodulekeeper "soliz-core/x/solizcore/keeper"
 	// this line is used by starport scaffolding # stargate/app/moduleImport
 
 	"soliz-core/docs"
 )
 
 const (
-	AccountAddressPrefix = "cosmos"
-	Name                 = "soliz-core"
+	AccountAddressPrefix = "soliz"
+	Name                 = "soliz"
 )
 
 var (
@@ -115,8 +114,6 @@ type App struct {
 	ScopedIBCTransferKeeper   capabilitykeeper.ScopedKeeper
 	ScopedICAControllerKeeper capabilitykeeper.ScopedKeeper
 	ScopedICAHostKeeper       capabilitykeeper.ScopedKeeper
-
-	SolizcoreKeeper solizcoremodulekeeper.Keeper
 	// this line is used by starport scaffolding # stargate/app/keeperDeclaration
 
 	// simulation manager
@@ -254,7 +251,6 @@ func New(
 		&app.GroupKeeper,
 		&app.ConsensusParamsKeeper,
 		&app.CircuitBreakerKeeper,
-		&app.SolizcoreKeeper,
 		// this line is used by starport scaffolding # stargate/app/keeperDefinition
 	); err != nil {
 		panic(err)
