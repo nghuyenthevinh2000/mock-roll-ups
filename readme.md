@@ -1,5 +1,4 @@
-# solizcore
-**solizcore** is a blockchain built using Cosmos SDK and Tendermint and created with [Ignite CLI](https://ignite.com/cli).
+# mock roll ups is a pet project to run and deploy a roll - ups on localnet
 
 ## Get started
 
